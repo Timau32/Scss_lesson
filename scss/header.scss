@@ -1,0 +1,21 @@
+.nav {
+    @include flexbox(space-between, 87%);
+    align-items: center;
+    margin: 0 auto;
+  
+    &_logo {
+      color: $white;
+      font-size: 30px;
+    }
+  
+    &_navbar {
+      @include flexbox(space-around, 60%);
+      font-size: 17px;
+  
+      a {
+        color: $white;
+        @include setHover(color, tomato);
+      }
+    }
+  }
+  
